@@ -1,0 +1,10 @@
+{% extends "_base.html" %}
+
+{% block content %}
+    <h1>Listado de publicaciones</h1>
+    <ul>
+        {% for post in publication_list %}
+            <li>{{ post.body }}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
